@@ -1,4 +1,3 @@
 # Welcome to Bugworld
 
-This repo is for Bugworld: Exotic Creature Collection
-'s ebsite.
+This repo is for Bugworld: Exotic Creature Collection's website.
