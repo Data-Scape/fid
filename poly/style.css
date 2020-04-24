@@ -1,0 +1,86 @@
+body {
+  background-color: #1862af;
+  background-image: url("images/bg.png");
+}
+html {
+  scroll-behavior: smooth;
+}
+p {
+  font-family: 'Libre Baskerville', serif;
+}
+a {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  text-align: center;
+  color: #dbd6c0;
+}
+h1{
+  text-align: center;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
+#albumimg {
+  text-align: center;
+}
+#main {
+  position: relative;
+  padding: 150px 0;
+}
+#navbar {
+  position: fixed;
+  padding: 300px 0;
+  left: 40px;
+}
+#left {
+  position: absolute;
+  top: 100px;
+  left: 170px;
+}
+#right {
+  position: absolute;
+  top: 100px;
+  right: 170px;
+}
+#link:hover {
+  opacity: 0;
+}
+#album:hover {
+  opacity: 0.7;
+}
+.text {
+  margin: auto;
+  position: static;
+  width: 1000px;
+  height: auto;
+}
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
+}
+.link {
+ /*stuff*/
+}
+.logo {
+  height: 200px;
+  width: 200px;
+}
