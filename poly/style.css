@@ -1,6 +1,7 @@
 body {
   background-color: #1862af;
   background-image: url("images/bg.png");
+  margin: 0;
 }
 html {
   scroll-behavior: smooth;
@@ -12,10 +13,37 @@ a {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
   text-align: center;
-  color: #dbd6c0;
+  color: #221f1f;
 }
-h1{
+h1 {
   text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  block-size: 150px;
+  writing-mode: vertical-rl;
+  background-color: white;
+}
+li {
+  float: left;
+  padding: 70px;
+}
+li a {
+  display: block;
+}
+li a:hover {
+  background-image: url("images/rainbow.png");
+  color: white;
+}
+.active {
+  background-image: url("images/rainbow.png");
+  color: white;
+}
+.shadow {
+  box-shadow: 10px 10px grey;
 }
 a:link {
   text-decoration: none;
@@ -36,10 +64,9 @@ a:active {
   position: relative;
   padding: 150px 0;
 }
-#navbar {
-  position: fixed;
-  padding: 300px 0;
-  left: 40px;
+#main2 {
+  position: relative;
+  width: 100%
 }
 #left {
   position: absolute;
@@ -54,13 +81,29 @@ a:active {
 #link:hover {
   opacity: 0;
 }
-#album:hover {
-  opacity: 0.7;
+.border {
+  position: relative;
+  width: 826px;
+  height: 100px;
+}
+.navbar {
+  position: fixed;
+  background-color: white;
+  width: 150px;
+  height: 571px;
+  top: 200px;
+  right: 100px;
+}
+.rainbow {
+  position: absolute;
+  background-image: url("images/rainbow2.png");
+  height: 700px;
+  width: 1237px;
+  top: 200px;
 }
 .text {
-  margin: auto;
-  position: static;
-  width: 1000px;
+  position: relative;
+  width: 960px;
   height: auto;
 }
 .floating {
@@ -71,16 +114,52 @@ a:active {
     margin-left: 30px;
     margin-top: 5px;
 }
-
 @keyframes floating {
     from { transform: translate(0,  0px); }
     65%  { transform: translate(0, 15px); }
     to   { transform: translate(0, -0px); }
 }
-.link {
- /*stuff*/
+.covers {
+  position: relative;
+  margin: auto;
+  width: 1200px;
+  height: 550px;
 }
 .logo {
   height: 200px;
   width: 200px;
+}
+.shadow {
+  border: 8.5px solid #221f1f;
+  box-shadow: 15px 15px #6d6d6d;
+}
+.outline {
+  border: 8.5px solid #221f1f;
+}
+.button {
+  height: 67px;
+  width: 256px;
+}
+.button:hover {
+  content: url("images/button2.png");
+  height: 67px;
+  width: 256px;
+}
+.buttondiv {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  width:50%;
+}
+.text {
+  position: absolute;
+  left:
+  text-align: justify;
+  width: 400px;
+  padding: 50px;
+  background-color: white;
+}
+.dates {
+  top: 200px;
+  border-top: 
 }
